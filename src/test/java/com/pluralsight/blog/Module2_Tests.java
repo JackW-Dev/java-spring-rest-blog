@@ -284,7 +284,7 @@ public class Module2_Tests {
                     authorsEqual = false;
             } catch (org.hibernate.LazyInitializationException e) {
                 e.printStackTrace();
-                assertTrue("Task 2: The author's `@ManyToOne` annotation does not have `(fetch = FetchType.EAGER)`.", false);
+                assertTrue("Task 2: The author's `@ManyToOne` annotation does not have `(fetch=FetchType.EAGER)`.", false);
             } catch (IndexOutOfBoundsException e){
                 authorsEqual = false;
             }
